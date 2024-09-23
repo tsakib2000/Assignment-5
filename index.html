@@ -7,6 +7,18 @@
     <!-- Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                btnColor:'#B4F461'
+              }
+            } 
+          }
+        }
+      </script>
     <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,26 +30,55 @@
 }
     </style>
 </head>
-<body class="lexend-font">
- <nav class="bg-[#F9F7F3]">
-    <!-- nav container -->
-    <div class="w-11/12 mx-auto flex justify-between p-10">
-        <button class="btn text-xl text-black font-bold btn-[#F9F7F3]">Blog</button>
-        <!-- logo div -->
-        <div class="flex items-center">
-            <img src="./assets/logo.png" alt="">
-            <H1> Donate Bangladesh</H1>
+<body class="lexend-font box-border">
+
+ <nav class="fixed w-full top-0" >
+<div class="bg-[#F9F7F3]" >
+        <!-- nav container -->
+         <div class=" mx-auto flex justify-between p-10   w-11/12 bg-opacity-85  ">
+            <!-- Blog Button -->
+            <button class="btn text-xl text-black font-bold bg-btnColor border border-">Blog</button>
+            <!-- logo div -->
+            <div class="flex items-center gap-3">
+                <img class="w-12 h-12" src="./assets/logo.png" alt="">
+                <H1 class="text-2xl text-[#111111] font-bold hidden md:block">Donate Bangladesh</H1>
+            </div>
+             <!--Account Balance part  -->
+             <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <p id="main-balance" class="text-xl text-[#111111B3]">5500</p>
+                <P class="text-xl text-[#111111B3]">BDT</P>
+             </div>
         </div>
-         <!--Account Balance part  -->
-         <div class="flex items-center gap-3">
-            <img src="./assets/coin.png" alt="">
-            <p>5500</p>
-            <P>BDT</P>
+
+        <!-- Donate & History Button-->
+         <div class="flex justify-center items-center gap-4 pt-16 bg-white bg-opacity-85  ">
+            <button class="btn bg-btnColor text-xl text-[#111111]">Donation</button>
+            <button class="btn  text-xl text-[#111111B3] border border-[#1111114D]">Donation</button>
          </div>
-    </div>
+
+</div>
  </nav>
 
- <main></main>
- 
+ <main class="mt-72">
+    <!-- card container  -->
+    <div class="w-11/12 md:w-8/12 mx-auto">
+        <!-- card-1  -->
+         <div class="flex justify-evenly items-center flex-col lg:flex-row border border-gray-300 rounded-xl p-4 gap-4">
+            <img class="h-full w-full" src="./assets/feni.png" alt="">
+            <div class="flex flex-col justify space-y-7 ">
+                <div class="flex items-center gap-2 bg-[#1111110D] p-4 w-max rounded-xl">
+                    <img class="h-full " src="./assets/coin.png" alt="">
+                    <p>0</p>
+                    <p>BDT</p>
+                </div>
+                <h1 class="text-xl text-[#111111] font-bold">Donate for <span id="Donate-feni">Flood at Noakhali, Bangladesh</span></h1>
+                <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <input type="text" name="" id="" placeholder="Write Donation Amount" class="border border-gray-300 p-4 rounded-xl">
+                <button id="feni-btn" class="btn bg-btnColor">Donate Now</button>
+            </div>
+         </div>
+    </div>
+ </main>
 </body>
 </html>
