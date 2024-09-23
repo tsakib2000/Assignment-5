@@ -83,7 +83,7 @@ const totalDonation = donationBalance + Input
  const historyDiv = document.createElement('div');
  historyDiv.className= " border border-gray-400 p-5 rounded-xl"
  historyDiv.innerHTML =`
- <p>${Input} Taka is Donate for  Flood at Noakhali, Bangladesh</p>
+ <p>${Input} Donate for Flood Relief in Feni,Bangladesh</p>
  <p class= 'text-gray-400'> Date : ${new Date()}</p>
  `;
  const historyContainer = document.getElementById("History-container")
@@ -116,7 +116,7 @@ const totalDonation = donationBalance + Input
  const historyDiv = document.createElement('div');
  historyDiv.className= " border border-gray-400 p-5 rounded-xl"
  historyDiv.innerHTML =`
- <p>${Input} Taka is Donate for  Flood at Noakhali, Bangladesh</p>
+ <p>${Input} Taka is Donate for  Injured in the Quota Movement</p>
  <p class= 'text-gray-400'> Date : ${new Date()}</p>
  `;
  const historyContainer = document.getElementById("History-container")
@@ -126,3 +126,9 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
 })
+
+//BLog Btn 
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href='./blog.html';
+})
+

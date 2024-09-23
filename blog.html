@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Blog</title>
+        <!-- Tailwind CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    btnColor:'#B4F461'
+                  }
+                } 
+              }
+            }
+          </script>
+        <!-- Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+    .lexend-font {
+      font-family: "Lexend", sans-serif;
+     
+    }
+        </style>
+</head>
+<body>
+    <nav>
+        <div class=" mx-auto flex justify-between p-10   w-11/12 bg-opacity-85  ">
+            <!-- Blog Button -->
+            <button id="Home-btn" class="btn text-xl text-black font-bold bg-btnColor border border-">Home</button>
+            <!-- logo div -->
+            <div class="flex items-center gap-3">
+                <img class="w-12 h-12" src="./assets/logo.png" alt="">
+                <H1 class="text-2xl text-[#111111] font-bold hidden md:block">Donate Bangladesh</H1>
+            </div>
+             <!--Account Balance part  -->
+             <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <p id="main-balance" class="text-xl text-[#111111B3]">95000</p>
+                <P class="text-xl text-[#111111B3]">BDT</P>
+             </div>
+        </div>
+    </nav>
+<main >
+    <div class="w-10/12 mx-auto h-screen flex flex-col justify-center items-center">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+    </div>
+</main>
+<script src="./JS/blog.js"></script>
+</body>
+</html>
