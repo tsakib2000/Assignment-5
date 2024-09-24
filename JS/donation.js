@@ -3,26 +3,26 @@
 // History button
 document.getElementById('history-btn').addEventListener('click',function(){
 
-  document.getElementById('history-btn').classList.remove("border", "border-[#1111114D]")
-  classAdd('history-btn','bg-btnColor')
-   classRemove("donation-btn",'bg-btnColor')
-//   document.getElementById("donation-btn").classList.remove('bg-btnColor')
-  document.getElementById("donation-btn").classList.add("border", "border-[#1111114D]")
+document.getElementById('history-btn').classList.remove("border", "border-[#1111114D]");
+document.getElementById("donation-btn").classList.add("border", "border-[#1111114D]");
+classAdd('history-btn','bg-btnColor');
+classRemove("donation-btn",'bg-btnColor');
+classAdd('donation-card-container','hidden');
+classRemove('History-container','hidden');
 
-  document.getElementById('donation-card-container').classList.add('hidden');
-  document.getElementById('History-container').classList.remove('hidden');
-})
+});
 // donation button
 document.getElementById('donation-btn').addEventListener('click',function(){
 
-  document.getElementById('donation-btn').classList.remove("border", "border-[#1111114D]")
-  document.getElementById('donation-btn').classList.add('bg-btnColor')
-  document.getElementById("history-btn").classList.remove('bg-btnColor')
-  document.getElementById("history-btn").classList.add("border", "border-[#1111114D]")
-
+  document.getElementById('donation-btn').classList.remove("border", "border-[#1111114D]");
+  document.getElementById("history-btn").classList.add("border", "border-[#1111114D]");
   document.getElementById('donation-card-container').classList.remove('hidden');
-  document.getElementById('History-container').classList.add('hidden');
-})
+
+  classAdd('donation-btn','bg-btnColor')
+  classRemove("history-btn",'bg-btnColor')
+classAdd('History-container','hidden')
+ 
+});
 
 // Noakhali donation
 document.getElementById("noakhali-btn").addEventListener('click',function(){
@@ -58,7 +58,7 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
-})
+});
 //Feni donation
 document.getElementById("feni-btn").addEventListener('click',function(){
    const Input = getValuesByInput("feni-input");
@@ -92,7 +92,7 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
-})
+});
 //Quota injured donation
 document.getElementById("quota-btn").addEventListener('click',function(){
    const Input = getValuesByInput("quota-input");
@@ -126,10 +126,10 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
-})
+});
 
 //BLog Btn 
 document.getElementById('blog-btn').addEventListener('click',function(){
     window.location.href='./blog.html';
-})
+});
 
