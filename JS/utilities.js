@@ -13,3 +13,11 @@ function getTextValue(id){
     
 }
 
+function classAdd(id,className){
+    const addClass = document.getElementById(id).classList.add(className);
+    return addClass;
+}
+function classRemove(id,className){
+    const removeClass = document.getElementById(id).classList.remove(className);
+    return removeClass;
+}

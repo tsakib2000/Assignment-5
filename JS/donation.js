@@ -4,8 +4,9 @@
 document.getElementById('history-btn').addEventListener('click',function(){
 
   document.getElementById('history-btn').classList.remove("border", "border-[#1111114D]")
-  document.getElementById('history-btn').classList.add('bg-btnColor')
-  document.getElementById("donation-btn").classList.remove('bg-btnColor')
+  classAdd('history-btn','bg-btnColor')
+   classRemove("donation-btn",'bg-btnColor')
+//   document.getElementById("donation-btn").classList.remove('bg-btnColor')
   document.getElementById("donation-btn").classList.add("border", "border-[#1111114D]")
 
   document.getElementById('donation-card-container').classList.add('hidden');
