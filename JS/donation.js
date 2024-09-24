@@ -35,7 +35,7 @@ document.getElementById("noakhali-btn").addEventListener('click',function(){
     return;
  }
  if(mainBalance <= 0 || mainBalance < Input){
-    alert('insufficient Balance')
+    alert('Insufficient Balance')
     return;
  }
     const TotalBalance = getTextField('main-balance')
@@ -55,9 +55,10 @@ const totalDonation = donationBalance + Input
  `;
  const historyContainer = document.getElementById("History-container")
 historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
-
+ 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
+document.getElementById("noakhali-input").value = "";
 });
 //Feni donation
 document.getElementById("feni-btn").addEventListener('click',function(){
@@ -69,7 +70,7 @@ document.getElementById("feni-btn").addEventListener('click',function(){
     return;
  }
  if(mainBalance <= 0 || mainBalance < Input){
-    alert('insufficient Balance')
+    alert('Insufficient Balance')
     return;
  }
     const TotalBalance = getTextField('main-balance')
@@ -92,6 +93,7 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
+ document.getElementById("feni-input").value = "";
 });
 //Quota injured donation
 document.getElementById("quota-btn").addEventListener('click',function(){
@@ -103,7 +105,7 @@ document.getElementById("quota-btn").addEventListener('click',function(){
     return;
  }
  if(mainBalance <= 0 || mainBalance < Input){
-    alert('insufficient Balance')
+    alert('Insufficient Balance')
     return;
  }
     const TotalBalance = getTextField('main-balance')
@@ -126,6 +128,7 @@ historyContainer.insertBefore(historyDiv,historyContainer.firstChild);
 
 //  Show MODAL
  document.getElementById('my_modal_1').showModal();
+ document.getElementById("quota-input").value = "";
 });
 
 //BLog Btn 
