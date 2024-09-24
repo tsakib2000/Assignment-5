@@ -40,7 +40,7 @@
 </head>
 <body>
     <nav class="bg-[#F9F7F3]">
-        <div class=" mx-auto flex justify-between p-10   w-11/12   ">
+        <div class=" mx-auto flex justify-between items-center p-10   w-11/12 flex-col md:flex-row gap-4 ">
             <!-- Blog Button -->
             <button id="Home-btn" class="btn text-xl text-black font-bold bg-btnColor border border-">Home</button>
             <!-- logo div -->
@@ -56,44 +56,44 @@
              </div>
         </div>
     </nav>
-<main >
-  <div class="flex justify-center my-9  text-center">
-    <h1 class=" text-3xl md:text-5xl lg:text-8xl rammetto-font"> Important FAQ About DOM</h1>
+<main class="flex flex-col justify-center items-center mt-24" >
+  <div class="flex justify-center my-9 mb-32 text-center">
+    <h1 class=" text-3xl md:text-5xl lg:text-7xl rammetto-font"> Important FAQ About DOM</h1>
   </div>
     <div class="w-10/12 mx-auto  flex flex-col justify-center items-center gap-4">
         <div class="collapse collapse-arrow bg-lime-100 text-gray-900">
             <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium ">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-title text-2xl font-medium ">What is the Document Object Model (DOM)?</div>
             <div class="collapse-content">
-              <p> Document Object Model (DOM) is a Programming interface for Web document. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+              <p class="text-lg"> Document Object Model (DOM) is a Programming interface for Web document. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-lime-100 text-gray-900">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
             <div class="collapse-content">
-              <p>There are a few different methods for selecting an element in the HTML document. Most used are :
-                <ol>
-                  <li>1.getElementById()</li>
-                  <li>2.getElementsByClassName()</li>
-                  <li>3.querySelector()</li>
-                  <li>4.querySelectorAll()</li>
-                </ol>
+              <p class="text-xl font-bold">There are a few different methods for selecting an element in the HTML document. Most used are :
+                <ul class="text-lg">
+                  <li>1.getElementById() <ul class="list-disc list-inside"><li>  The getElementById() method returns an element with a specified value.</li></ul></li>
+                  <li>2.getElementsByClassName() <ul class="list-disc list-inside"><li>  The getElementsByClassName() method returns a collection of elements with a specified class name(s).</li></ul></li>
+                  <li>3.querySelector() <ul class="list-disc list-inside"><li> The querySelector() method returns the first element that matches a CSS selector.</li></ul></li>
+                  <li>4.querySelectorAll() <ul class="list-disc list-inside"><li> The querySelectorAll() method returns all elements that matches a CSS selector(s).</li></ul></li>
+                </ul>
               </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-lime-100 text-gray-900">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
             <div class="collapse-content">
-              <p>Event delegation leverages event propagation to manage events efficiently. Instead of adding event listeners to multiple child elements, you add a single event listener to a parent element. This listener takes advantage of event bubbling to handle events for its child elements.</p>
+              <p class="text-lg">Event delegation leverages event propagation to manage events efficiently. Instead of adding event listeners to multiple child elements, you add a single event listener to a parent element. This listener takes advantage of event bubbling to handle events for its child elements.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-lime-100 text-gray-900">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p>DOM manipulation allows developers to interact with and modify the structure, style, and content of web pages.To manipulate the DOM, we need to access its elements. This is commonly done using the <span class="font-extrabold">document</span> object, which represents the entire HTML document.DOM manipulation also extends to modifying the styles of elements, allowing us to create visually appealing and dynamic web pages.We can use the <span class="font-extrabold">style</span> property of an element to change its appearance.
+              <p class="text-lg">DOM manipulation allows developers to interact with and modify the structure, style, and content of web pages.To manipulate the DOM, we need to access its elements. This is commonly done using the <span class="font-extrabold">document</span> object, which represents the entire HTML document.DOM manipulation also extends to modifying the styles of elements, allowing us to create visually appealing and dynamic web pages.We can use the <span class="font-extrabold">style</span> property of an element to change its appearance.
 
                 <div class="mockup-code">
   <pre data-prefix="$"><code>// Accessing an image element

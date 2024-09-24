@@ -18,9 +18,9 @@ document.getElementById('donation-btn').addEventListener('click',function(){
   document.getElementById("history-btn").classList.add("border", "border-[#1111114D]");
   document.getElementById('donation-card-container').classList.remove('hidden');
 
-  classAdd('donation-btn','bg-btnColor')
-  classRemove("history-btn",'bg-btnColor')
-classAdd('History-container','hidden')
+  classAdd('donation-btn','bg-btnColor');
+  classRemove("history-btn",'bg-btnColor');
+classAdd('History-container','hidden');
  
 });
 
@@ -85,7 +85,7 @@ const totalDonation = donationBalance + Input
  const historyDiv = document.createElement('div');
  historyDiv.className= " border border-gray-400 p-5 rounded-xl"
  historyDiv.innerHTML =`
- <p>${Input} Donate for Flood Relief in Feni,Bangladesh</p>
+ <p>${Input} Taka Donate for Flood Relief in Feni,Bangladesh</p>
  <p class= 'text-gray-400'> Date : ${new Date()}</p>
  `;
  const historyContainer = document.getElementById("History-container")
