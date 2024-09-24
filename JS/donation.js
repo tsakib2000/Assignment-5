@@ -29,11 +29,11 @@ document.getElementById("noakhali-btn").addEventListener('click',function(){
    const mainBalance =getTextValue('main-balance');
    
 
- if(Input<0 || isNaN(Input)){
+ if(Input <= 0 || isNaN(Input)){
     alert('invalid amount')
     return;
  }
- if(mainBalance < 0 || mainBalance < Input){
+ if(mainBalance <= 0 || mainBalance < Input){
     alert('insufficient Balance')
     return;
  }
@@ -63,11 +63,11 @@ document.getElementById("feni-btn").addEventListener('click',function(){
    const Input = getValuesByInput("feni-input");
    const mainBalance =getTextValue('main-balance');
 
- if(Input<0 || isNaN(Input)){
+ if(Input<=0 || isNaN(Input)){
     alert('invalid amount')
     return;
  }
- if(mainBalance < 0 || mainBalance < Input){
+ if(mainBalance <= 0 || mainBalance < Input){
     alert('insufficient Balance')
     return;
  }
@@ -97,11 +97,11 @@ document.getElementById("quota-btn").addEventListener('click',function(){
    const Input = getValuesByInput("quota-input");
    const mainBalance =getTextValue('main-balance');
 
- if(Input<0 || isNaN(Input)){
+ if(Input<=0 || isNaN(Input)){
     alert('invalid amount')
     return;
  }
- if(mainBalance < 0 || mainBalance < Input){
+ if(mainBalance <= 0 || mainBalance < Input){
     alert('insufficient Balance')
     return;
  }
